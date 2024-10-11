@@ -1,6 +1,6 @@
-import {test,expect} from '@playwright/test'
+import { test, expect } from '@playwright/test'
 
-test('Handle Keyboard Actions', async ({page}) =>{
+test('Handle Keyboard Actions', async ({ page }) => {
     await page.goto('https://gotranscript.com/text-compare')
 
     // 1) Locate Elements
@@ -32,5 +32,5 @@ test('Handle Keyboard Actions', async ({page}) =>{
     // Press on Ctrl+V
     await page.keyboard.press('Control+V')
     await page.waitForTimeout(3000)
-    
+
 })

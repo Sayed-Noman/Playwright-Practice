@@ -53,7 +53,7 @@ test.skip('Handle Mouse Double Click Option', async ({ page }) => {
 
 })
 
-test('Handle Mouse Drag & Drop Action', async ({page}) =>{
+test('Handle Mouse Drag & Drop Action', async ({ page }) => {
     await page.goto('http://www.dhtmlgoodies.com/scripts/drag-drop-nodes-quiz/drag-drop-nodes-quiz-demo2.html')
 
     // 1) Locate Source Element
@@ -64,12 +64,12 @@ test('Handle Mouse Drag & Drop Action', async ({page}) =>{
     const unitedKingdom = page.locator("#box3")
     const norway = page.locator("#box2")
 
-   
+
     // Ensure both elements are visible
     await london.waitFor({ state: 'visible' })
     await unitedKingdom.waitFor({ state: 'visible' })
-    await oslo.waitFor({state: 'visible'})
-    await norway.waitFor({state:'visible'})
+    await oslo.waitFor({ state: 'visible' })
+    await norway.waitFor({ state: 'visible' })
 
     // 3) Way-1 Drag & Drop
     await london.hover()

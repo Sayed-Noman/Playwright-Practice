@@ -23,4 +23,4 @@ test('Test 3', async ({page}) =>{
 // allure open allure-report
 
 // Optional: Clean previous allure results before running tests
-// rm -rf allure-results
+// rmdir /s /q allure-results

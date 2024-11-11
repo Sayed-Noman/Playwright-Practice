@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es2020",                                  /* Set the JavaScript language version */
+    "module": "commonjs",                                 /* Use CommonJS module system */
+    "sourceMap": true,                                    /* Generate source maps */
+    "outDir": "./dist",                                   /* Output directory for compiled files */
+    "esModuleInterop": true,                              /* Enable compatibility with CommonJS modules */
+    "forceConsistentCasingInFileNames": true,              /* Enforce consistent casing in file names */
+    "strict": true,                                       /* Enable strict type-checking */
+    "skipLibCheck": true,                                 /* Skip type checking for declaration files */
+    "resolveJsonModule": true,                            /* Enable importing JSON files as modules */
+    "types": ["jest"],                                    /* Include Jest types for proper Jest integration */
+    "moduleResolution": "node",                           /* Resolve modules using Node.js strategy */
+    "allowJs": true,                                      /* Allow JavaScript files if necessary */
+    "noEmit": false,                                      /* Don't stop emitting output files */
+    "declaration": true,                                  /* Generate declaration (.d.ts) files */
+    "declarationMap": true,                               /* Generate declaration maps */
+    "skipDefaultLibCheck": true,                          /* Skip default library file checking */
+    "noImplicitAny": false,                               /* Allow 'any' types for flexibility */
+    "noUnusedLocals": true,                               /* Report unused local variables */
+    "noUnusedParameters": true                            /* Report unused parameters */
+  },
+
+  "include": [
+    "src/**/*.ts",                                       /* Include all TypeScript files in the src folder */
+    "tests/**/*.ts"                                      /* Include all TypeScript test files */
+, "jest.setup.ts"  ],
+  "exclude": [
+    "node_modules",                                      /* Exclude the node_modules folder */
+    "dist"                                               /* Exclude the dist folder */
+  ]
+}

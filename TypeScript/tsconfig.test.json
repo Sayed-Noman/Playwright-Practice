@@ -1,0 +1,16 @@
+{
+    "extends": "./tsconfig.json", /* Inherit from the base tsconfig.json */
+    "compilerOptions": {
+        "outDir": "./dist/tests", /* Output compiled test files into a separate folder */
+        "types": [
+            "jest",
+            "playwright",
+            "@playwright/test",
+            "node"
+        ], /* Include the types for Jest, Playwright, and Node.js */
+        "sourceMap": true /* Enable source maps for debugging tests */
+    },
+    "include": [
+        "./tests/**/*.ts" /* Only include test files */
+    ]
+}

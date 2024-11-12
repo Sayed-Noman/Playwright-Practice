@@ -10,7 +10,7 @@ describe('Launch a Browser Suite', () => {
         // Step 3 : Open a new Page
         const page: Page = await context.newPage();
 
-                // Go to an Url
+        // Go to an Url
         await page.goto('https://www.northsouth.edu/');
         const title = await page.title();
         console.log(`Page Title: ${title}`);

@@ -12,7 +12,7 @@ describe('Auto Wait Suite', () => {
 
         // Go to an Url
         await page.goto('https://letcode.in/');
-        const title = await page.title();
+        const title: string = await page.title();
         console.log(`Page Title: ${title}`);
 
         // Jest assertions
